@@ -48,6 +48,11 @@ class GrayViewController: UIViewController {
         
         if let vc = segue.destination as? YellowViewController {
             vc.delegate = self// 옐로우에 delegate라는 변수가 있다.
+            
+            vc.changeBackColor {//옐로우화면의 f()를 구현
+                (color:UIColor) -> () in
+                self.view.backgroundColor = color//넘어 갈때 배경을 바꾸고 다음 옐로우 화면으로 넘어 간다.
+            }
         }//다음 화면으로 넘어 갈때 현재 화면을 delegate로 설정한다.
     }
     
