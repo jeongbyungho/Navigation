@@ -12,6 +12,11 @@
 		E4AADD401EB05A4E00FF407E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AADD3E1EB05A4E00FF407E /* Main.storyboard */; };
 		E4AADD421EB05A4E00FF407E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AADD411EB05A4E00FF407E /* Assets.xcassets */; };
 		E4AADD451EB05A4E00FF407E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AADD431EB05A4E00FF407E /* LaunchScreen.storyboard */; };
+		E4AADD4D1EB05FF700FF407E /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AADD4C1EB05FF700FF407E /* PinkViewController.swift */; };
+		E4AADD511EB067BF00FF407E /* PurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AADD501EB067BF00FF407E /* PurpleViewController.swift */; };
+		E4AADD531EB076F200FF407E /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AADD521EB076F200FF407E /* GreenViewController.swift */; };
+		E4AADD551EB076FC00FF407E /* GrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AADD541EB076FC00FF407E /* GrayViewController.swift */; };
+		E4AADD571EB0771600FF407E /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AADD561EB0771600FF407E /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		E4AADD411EB05A4E00FF407E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4AADD441EB05A4E00FF407E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4AADD461EB05A4E00FF407E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4AADD4C1EB05FF700FF407E /* PinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
+		E4AADD501EB067BF00FF407E /* PurpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurpleViewController.swift; sourceTree = "<group>"; };
+		E4AADD521EB076F200FF407E /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		E4AADD541EB076FC00FF407E /* GrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrayViewController.swift; sourceTree = "<group>"; };
+		E4AADD561EB0771600FF407E /* YellowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				E4AADD411EB05A4E00FF407E /* Assets.xcassets */,
 				E4AADD431EB05A4E00FF407E /* LaunchScreen.storyboard */,
 				E4AADD461EB05A4E00FF407E /* Info.plist */,
+				E4AADD4C1EB05FF700FF407E /* PinkViewController.swift */,
+				E4AADD501EB067BF00FF407E /* PurpleViewController.swift */,
+				E4AADD521EB076F200FF407E /* GreenViewController.swift */,
+				E4AADD541EB076FC00FF407E /* GrayViewController.swift */,
+				E4AADD561EB0771600FF407E /* YellowViewController.swift */,
 			);
 			path = NavigationTest;
 			sourceTree = "<group>";
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4AADD511EB067BF00FF407E /* PurpleViewController.swift in Sources */,
+				E4AADD4D1EB05FF700FF407E /* PinkViewController.swift in Sources */,
 				E4AADD3D1EB05A4E00FF407E /* ViewController.swift in Sources */,
+				E4AADD571EB0771600FF407E /* YellowViewController.swift in Sources */,
+				E4AADD551EB076FC00FF407E /* GrayViewController.swift in Sources */,
 				E4AADD3B1EB05A4E00FF407E /* AppDelegate.swift in Sources */,
+				E4AADD531EB076F200FF407E /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
