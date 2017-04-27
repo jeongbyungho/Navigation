@@ -112,10 +112,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsl-kd-vcs">
+                                <rect key="frame" x="123" y="224" width="128" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="배경색변경"/>
+                                <connections>
+                                    <action selector="changeBackColorAction:" destination="VwK-4l-iw8" eventType="touchUpInside" id="Epe-kf-Odo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbS-QJ-agf">
+                                <rect key="frame" x="123" y="356" width="192" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="appdelegate 배경색 변경"/>
+                                <connections>
+                                    <action selector="delegateChangeBackColor:" destination="VwK-4l-iw8" eventType="touchUpInside" id="fDe-dD-R6n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="changeBackColor" destination="wsl-kd-vcs" id="qDx-uM-c6b"/>
                         <outlet property="myStrLabel" destination="X9z-oF-RUt" id="DUz-Yb-Xl2"/>
                     </connections>
                 </viewController>
@@ -266,6 +285,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Aei-dn-A3p" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="eqA-Kz-ImK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

@@ -14,6 +14,17 @@ class PurpleViewController: UIViewController {
 
     @IBOutlet var myStrLabel: UILabel!
     
+    @IBOutlet var changeBackColor: UIButton!
+    
+    @IBAction func delegateChangeBackColor(_ sender: Any) {
+        if let appdelegate = UIApplication.shared.delegate as? AppDelegate {
+            appdelegate.bgColor = UIColor.yellow//공유변수인 appdelegate의 값을 변경// 이렇게 된 상태에서 첫화면을 가면 현재 변경된 값으로 설정이 되어있다.
+        }
+    }
+    
+    @IBAction func changeBackColorAction(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name.init(rawValue:"CHANGE_COLOR"), object: nil, userInfo: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

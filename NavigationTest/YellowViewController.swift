@@ -18,6 +18,12 @@ class YellowViewController: UIViewController {
     
     @IBAction func doneAction(_ sender: Any) {
         if let myDelegate = delegate, let myStr = myTextField.text {//검증하면 그레이의 메서드 호출가능하며 지금 뷰의 텍스트필드의 텍스트를 설정할 수 있다.
+            
+            //afunc 가 nil에서 값이 할당 된 이유는 이전 gray 뷰컨트롤에서 옐로우 올때 할당이 된다.
+            if let afunc = myFunc {
+                afunc(UIColor.black)
+            }
+            
             myDelegate.sendText(newText: myStr)
             
             self.navigationController?.popViewController(animated: true)
@@ -31,8 +37,16 @@ class YellowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //로딩 후 노티피케이션 함수 설정
+        NotificationCenter.default.addObserver(self, selector: #selector(changeColor(notification:)), name: NSNotification.Name.init(rawValue: "CHANGE_COLOR"), object: nil)
 
         // Do any additional setup after loading the view.
+    }
+    
+    //노티피케이션 선언 함수
+    func changeColor(notification:NSNotification) {
+        self.view.backgroundColor = UIColor.blue
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,8 +54,8 @@ class YellowViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func changeBackColor(_ f:(UIColor) -> ()) {
-        f(UIColor.black)
+    func changeBackColor(_ colorFunc:@escaping (UIColor) -> ()) {
+        self.myFunc = colorFunc
     }
     
 
